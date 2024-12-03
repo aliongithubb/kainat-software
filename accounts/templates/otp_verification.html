@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<!-- Page Header Start -->
+<div class="container-fluid bg-dark bg-img p-5 mb-5">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1 class="display-4 text-uppercase text-white">Verfication</h1>
+            <a href="/">Home</a>
+            <i class="far fa-square text-primary px-2"></i>
+            <a href="#">OTP Verifcation</a>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+
+<!-- Sign up Start -->
+<div class="container-fluid login position-relative " style="margin-top: 90px;">
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <form action="/accounts/otp_verification/" method="post">
+                    {% csrf_token %}
+                    <div class="row g-3">
+                        <div class="col-sm-12 text-center">
+                            <h3 class="text-primary mb-3 ms-2">Please Write the Verification Code below.</h3>
+                            
+                        </div>
+                        <div class="col-sm-12 text-danger text-center">
+                            {{error}}
+                            
+                        </div>  
+                            <div class="col-sm-12 text-center">
+                                <input type="text" name="otp" class="text-primary" value="{{otp}}">
+                                <div class="otp_div">
+                                    <input type="text" name="otp1"  class="otp_input" maxlength="1">
+                                    <input type="text" name="otp2"  class="otp_input" maxlength="1">
+                                    <input type="text" name="otp3"  class="otp_input space" maxlength="1">
+                                    <input type="text" name="otp4"  class="otp_input" maxlength="1">
+                                    <input type="text" name="otp5"  class="otp_input" maxlength="1">
+                                    <input type="text" name="otp6"  class="otp_input" maxlength="1">    
+                                </div>
+                                    
+                                </div>
+                                    
+                            <div class="row my-5">
+                                <button class="btn btn-primary col-4 text-uppercase border-inner px-4 mx-auto"
+                                    type="submit">Verify</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
+
+
+{% endblock %}

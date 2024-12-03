@@ -1,0 +1,627 @@
+
+{% extends 'dashboard-base.html' %}
+{% block content %}
+{% load static %}
+
+    <!--================================-->
+        <!-- Page Inner Start -->
+        <!--================================-->
+
+<div class="page-inner">
+    <!--================================-->
+    <!-- Main Wrapper Start -->
+    <!--================================-->
+    <div id="main-wrapper">
+       <!--================================-->
+       <!-- Breadcrumb Start -->
+       <!--================================-->
+       <div class="pageheader pd-y-25">
+          <div class="pd-t-5 pd-b-5">
+             <h1 class="pd-0 mg-0 tx-20 text-overflow">Dashboard v.1</h1>
+          </div>
+          <div class="breadcrumb pd-0 mg-0">
+             <a class="breadcrumb-item" href="index.html"><i class="icon ion-ios-home-outline"></i> Home</a>
+             <a class="breadcrumb-item" href="javascript:void(0)">Dashboard</a>
+             <span class="breadcrumb-item active">Dashboard v.1</span>
+          </div>
+       </div>
+       <!--/ Breadcrumb End -->
+       <!--================================-->
+       <!-- Count Card Start -->
+       <!--================================-->
+       <div class="row clearfix">
+          <div class="col-xl-3 col-md-6">
+             <div class="card bg-teal mb-4 shadow-1">
+                <div class="card-body card-img">
+                   <div class="card-icon">
+                      <i class="ion-ios-analytics float-right"></i>
+                   </div>
+                   <div class="text-white">
+                      <h6 class="mb-0 text-uppercase tx-13">Orders</h6>
+                      <h4 class="mg-b-40">587</h4>
+                      <span class="badge badge-warning ft-right mg-r-10"> +31% </span> <span>From previous period</span>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+             <div class="card bg-danger mb-4 shadow-1">
+                <div class="card-body card-img">
+                   <div class="card-icon">
+                      <i class="ion-ios-basketball-outline float-right"></i>
+                   </div>
+                   <div class="text-white">
+                      <h6 class="mb-0 text-uppercase tx-13">Revenue</h6>
+                      <h4 class="mg-b-40">$4,746</h4>
+                      <span class="badge badge-info ft-right mg-r-10"> -15% </span> <span>From previous period</span>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+             <div class="card bg-primary mb-4 shadow-1">
+                <div class="card-body card-img">
+                   <div class="card-icon">
+                      <i class="ion-ios-lightbulb-outline float-right"></i>
+                   </div>
+                   <div class="text-white">
+                      <h6 class="mb-0 text-uppercase tx-13">Average Price</h6>
+                      <h4 class="mg-b-40">$24.4</h4>
+                      <span class="badge badge-warning ft-right mg-r-10"> 10% </span> <span>From previous period</span>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+             <div class="card bg-info mb-4 shadow-1">
+                <div class="card-body card-img">
+                   <div class="card-icon">
+                      <i class="ion-ios-pie-outline float-right"></i>
+                   </div>
+                   <div class="text-white">
+                      <h6 class="mb-0 text-uppercase tx-13">Product Sold</h6>
+                      <h4 class="mg-b-40">$2,390</h4>
+                      <span class="badge badge-danger ft-right mg-r-10"> +67% </span> <span>From previous period</span>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <!--/ Count Card End -->
+       <!--================================-->
+       <!-- Statistic Start -->
+       <!--================================-->						
+       <div class="row no-gutters d-block clearfix">
+          <div class="card mg-t-5 mg-b-30 shadow-1">
+             <div class="card-header with-elements">
+                <h4 class="card-header-title">
+                   Statistics
+                </h4>
+                <div class="card-header-btn">
+                   <a  href="javascript:void(0)" data-toggle="collapse" class="btn btn-info" data-target="#collapse1" aria-expanded="true"><i class="ion-ios-arrow-down"></i></a>
+                   <a href="javascript:void(0)" data-toggle="refresh" class="btn btn-warning"><i class="ion-android-refresh"></i></a>
+                   <a href="javascript:void(0)" data-toggle="expand" class="btn btn-success"><i class="ion-android-expand"></i></a>
+                   <a href="javascript:void(0)" data-toggle="remove" class="btn btn-danger"><i class="ion-ios-trash-outline"></i></a>
+                </div>
+             </div>
+             <div class="row no-gutters row-bordered collapse show" id="collapse1">
+                <div class="col-md-3">
+                   <div class="card-body">
+                      <div class="row mg-t-20">
+                         <div class="col-6 col-xl-6 text-muted mb-3">Total sales</div>
+                         <div class="col-6 col-xl-6 mb-3">
+                            <span class="text-big">20,332</span>
+                            <sup class="text-success">+15%</sup>
+                         </div>
+                         <div class="col-6 col-xl-6 text-muted mb-3">Income amount</div>
+                         <div class="col-6 col-xl-6 mb-3">
+                            <span class="text-big">$10,534</span>
+                            <sup class="text-danger">-24%</sup>
+                         </div>
+                         <div class="col-6 col-xl-6 text-muted mb-3">Total Visitors</div>
+                         <div class="col-6 col-xl-6 mb-3">
+                            <span class="text-big">100,534</span>
+                            <sup class="text-success">+16%</sup>
+                         </div>
+                         <div class="col-6 col-xl-6 text-muted mb-3">Page views</div>
+                         <div class="col-6 col-xl-6 mb-3">
+                            <span class="text-big">21,332</span>
+                            <sup class="text-danger">-12%</sup>
+                         </div>
+                         <div class="col-6 col-xl-6 text-muted mb-3">Total budgets</div>
+                         <div class="col-6 col-xl-6 mb-3">
+                            <span class="text-big">$15,534</span>
+                            <sup class="text-success">+11%</sup>
+                         </div>
+                         <div class="col-6 col-xl-6 text-muted mb-3">Total Projects</div>
+                         <div class="col-6 col-xl-6 mb-3">
+                            <span class="text-big">210</span>
+                            <sup class="text-danger">-15%</sup>
+                         </div>
+                         <div class="col-6 col-xl-6 text-muted mb-3">Completed task</div>
+                         <div class="col-6 col-xl-6 mb-3">
+                            <span class="text-big">251</span>
+                            <sup class="text-success">+12%</sup>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-9">
+                   <div class="card-body">
+                      <div class="clearfix">
+                         <div id="area-legend" class="text-center"></div>
+                         <div id="area2" style="height:250px"></div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <!--/ Statistic End -->	
+       <div class="row clearfix">
+          <div class="col-md-6 col-lg-12 col-xl-6">
+             <!--================================-->
+             <!-- Popular Products Start -->
+             <!--================================-->
+             <div class="card mb-4 shadow-1">
+                <div class="card-header">
+                   <h4 class="card-header-title">
+                      Popular Products
+                   </h4>
+                <div class="card-header-btn">
+                   <a  href="javascript:void(0)" data-toggle="collapse" class="btn btn-info" data-target="#collapse2" aria-expanded="true"><i class="ion-ios-arrow-down"></i></a>
+                   <a href="javascript:void(0)" data-toggle="refresh" class="btn btn-warning"><i class="ion-android-refresh"></i></a>
+                   <a href="javascript:void(0)" data-toggle="expand" class="btn btn-success"><i class="ion-android-expand"></i></a>
+                   <a href="javascript:void(0)" data-toggle="remove" class="btn btn-danger"><i class="ion-ios-trash-outline"></i></a>
+                </div>
+                </div>
+                <div class="table-responsive collapse show" id="collapse2">
+                   <table class="table card-table">
+                      <thead>
+                         <tr>
+                            <th colspan="2">Item</th>
+                            <th>Price</th>
+                            <th>Sales</th>
+                            <th>Views</th>
+                         </tr>
+                      </thead>
+                      <tbody>
+                         <tr>
+                            <td class="align-middle" style="width: 75px">
+                               <img class="wd-50" src="assets/images/products/img1.jpg" alt="">
+                            </td>
+                            <td class="align-middle">
+                               <a href="javascript:void(0)">The Dothraki Shoes</a>
+                            </td>
+                            <td class="align-middle">$180.00</td>
+                            <td class="align-middle">343</td>
+                            <td class="align-middle">4,442</td>
+                         </tr>
+                         <tr>
+                            <td class="align-middle">
+                               <img class="wd-50" src="assets/images/products/img2.jpg" alt="">
+                            </td>
+                            <td class="align-middle">
+                               <a href="javascript:void(0)">Westeros Sneaker</a>
+                            </td>
+                            <td class="align-middle">$64.55</td>
+                            <td class="align-middle">182</td>
+                            <td class="align-middle">7,231</td>
+                         </tr>
+                         <tr>
+                            <td class="align-middle">
+                               <img class="wd-50" src="assets/images/products/img3.jpg" alt="">
+                            </td>
+                            <td class="align-middle">
+                               <a href="javascript:void(0)">The Dothraki Shoes</a>
+                            </td>
+                            <td class="align-middle">$235.55</td>
+                            <td class="align-middle">84</td>
+                            <td class="align-middle">4,672</td>
+                         </tr>
+                         <tr>
+                            <td class="align-middle">
+                               <img class="wd-50" src="assets/images/products/img4.jpg" alt="">
+                            </td>
+                            <td class="align-middle">
+                               <a href="javascript:void(0)">Kubaz Sunglass</a>
+                            </td>
+                            <td class="align-middle">$160.00</td>
+                            <td class="align-middle">64</td>
+                            <td class="align-middle">5,611</td>
+                         </tr>
+                         <tr>
+                            <td class="align-middle">
+                               <img class="wd-50" src="assets/images/products/img5.jpg" alt="">
+                            </td>
+                            <td class="align-middle">
+                               <a href="javascript:void(0)">Kel Dor Sunglass</a>
+                            </td>
+                            <td class="align-middle">$159.00</td>
+                            <td class="align-middle">72</td>
+                            <td class="align-middle">6,435</td>
+                         </tr>
+                         <tr>
+                            <td class="align-middle">
+                               <img class="wd-50" src="assets/images/products/img1.jpg" alt="">
+                            </td>
+                            <td class="align-middle">
+                               <a href="javascript:void(0)">The Dothraki Shoes</a>
+                            </td>
+                            <td class="align-middle">$162.00</td>
+                            <td class="align-middle">69</td>
+                            <td class="align-middle">2,911</td>
+                         </tr>
+                         <tr>
+                            <td class="align-middle">
+                               <img class="wd-50" src="assets/images/products/img2.jpg" alt="">
+                            </td>
+                            <td class="align-middle">
+                               <a href="javascript:void(0)">Westeros Sneaker</a>
+                            </td>
+                            <td class="align-middle">$159.00</td>
+                            <td class="align-middle">75</td>
+                            <td class="align-middle">6,749</td>
+                         </tr>
+                         <tr>
+                            <td class="align-middle">
+                               <img class="wd-50" src="assets/images/products/img1.jpg" alt="">
+                            </td>
+                            <td class="align-middle">
+                               <a href="javascript:void(0)">The Dothraki Shoes</a>
+                            </td>
+                            <td class="align-middle">$235.55</td>
+                            <td class="align-middle">91</td>
+                            <td class="align-middle">4,572</td>
+                         </tr>
+                      </tbody>
+                   </table>
+                </div>
+             </div>
+             <!--/ Popular Products End -->
+          </div>
+          <div class="col-md-6 col-lg-12 col-xl-6">
+             <!--================================-->
+             <!-- Transaction History Start -->
+             <!--================================-->
+             <div class="card mb-4 shadow-1">
+                <div class="card-header">
+                   <h4 class="card-header-title">
+                      Transaction History
+                   </h4>
+                <div class="card-header-btn">
+                   <a  href="javascript:void(0)" data-toggle="collapse" class="btn btn-info" data-target="#collapse3" aria-expanded="true"><i class="ion-ios-arrow-down"></i></a>
+                   <a href="javascript:void(0)" data-toggle="refresh" class="btn btn-warning"><i class="ion-android-refresh"></i></a>
+                   <a href="javascript:void(0)" data-toggle="expand" class="btn btn-success"><i class="ion-android-expand"></i></a>
+                   <a href="javascript:void(0)" data-toggle="remove" class="btn btn-danger"><i class="ion-ios-trash-outline"></i></a>
+                </div>
+                </div>
+                <div class="table-responsive collapse show" id="collapse3">
+                   <table class="table card-table">
+                      <thead>
+                         <tr>
+                            <th colspan="2">User</th>
+                            <th>Type</th>
+                            <th>Date</th>
+                         </tr>
+                      </thead>
+                      <tbody>
+                         <tr>
+                            <td class="pd-l-20">
+                               <img src="assets/images/user/user1.png" class="wd-36 rounded-circle" alt="Image">
+                            </td>
+                            <td>
+                               <a href="javascript:void(0)" class="d-block">Mark K. Peters</a>
+                               <span class="tx-10 tx-gray-500 d-block">TRANSID: 1234567890</span>
+                            </td>
+                            <td class="tx-12">
+                               <span class="badge-success ft-right mg-r-10">Verified</span> Email verified
+                            </td>
+                            <td>Just Now</td>
+                         </tr>
+                         <tr>
+                            <td class="pd-l-20">
+                               <img src="assets/images/user/user2.png" class="wd-36 rounded-circle" alt="Image">
+                            </td>
+                            <td>
+                               <a href="javascript:void(0)" class="d-block">Karmen F. Brown</a>
+                               <span class="tx-10 tx-gray-500 d-block">TRANSID: 1234567890</span>
+                            </td>
+                            <td class="tx-12">
+                               <span class="badge-info ft-right mg-r-10">Pending</span> Pending verification
+                            </td>
+                            <td>Apr 21, 2017 8:34am</td>
+                         </tr>
+                         <tr>
+                            <td class="pd-l-20">
+                               <img src="assets/images/user/user3.png" class="wd-36 rounded-circle" alt="Image">
+                            </td>
+                            <td>
+                               <a href="javascript:void(0)" class="d-block">Magalpok</a>
+                               <span class="tx-10 tx-gray-500 d-block">TRANSID: 1234567890</span>
+                            </td>
+                            <td class="tx-12">
+                               <span class="badge-success ft-right mg-r-10">Success</span> Purchased success
+                            </td>
+                            <td>Apr 10, 2017 4:40pm</td>
+                         </tr>
+                         <tr>
+                            <td class="pd-l-20">
+                               <img src="assets/images/user/user4.png" class="wd-36 rounded-circle" alt="Image">
+                            </td>
+                            <td>
+                               <a href="javascript:void(0)" class="d-block">Ariel T. Hall</a>
+                               <span class="tx-10 tx-gray-500 d-block">TRANSID: 1234567890</span>
+                            </td>
+                            <td class="tx-12">
+                               <span class="badge-warning ft-right mg-r-10">Hold</span> Payment on hold
+                            </td>
+                            <td>Apr 02, 2017 6:45pm</td>
+                         </tr>
+                         <tr>
+                            <td class="pd-l-20">
+                               <img src="assets/images/user/user5.png" class="wd-36 rounded-circle" alt="Image">
+                            </td>
+                            <td>
+                               <a href="javascript:void(0)" class="d-block">John L. Goulette</a>
+                               <span class="tx-10 tx-gray-500 d-block">TRANSID: 1234567890</span>
+                            </td>
+                            <td class="tx-12">
+                               <span class="badge-danger ft-right mg-r-10">Deactivated</span> Account deactivated
+                            </td>
+                            <td>Mar 30, 2017 10:30am</td>
+                         </tr>
+                         <tr>
+                            <td class="pd-l-20">
+                               <img src="assets/images/user/user4.png" class="wd-36 rounded-circle" alt="Image">
+                            </td>
+                            <td>
+                               <a href="javascript:void(0)" class="d-block">Ariel T. Hall</a>
+                               <span class="tx-10 tx-gray-500 d-block">TRANSID: 1234567890</span>
+                            </td>
+                            <td class="tx-12">
+                               <span class="badge-warning ft-right mg-r-10">Hold</span> Payment on hold
+                            </td>
+                            <td>Apr 02, 2017 6:45pm</td>
+                         </tr>
+                         <tr>
+                            <td class="pd-l-20">
+                               <img src="assets/images/user/user2.png" class="wd-36 rounded-circle" alt="Image">
+                            </td>
+                            <td>
+                               <a href="javascript:void(0)" class="d-block">John L. Goulette</a>
+                               <span class="tx-10 tx-gray-500 d-block">TRANSID: 1234567890</span>
+                            </td>
+                            <td class="tx-12">
+                               <span class="badge-danger ft-right mg-r-10">Deactivated</span> Account deactivated
+                            </td>
+                            <td>Mar 30, 2017 10:30am</td>
+                         </tr>
+                      </tbody>
+                   </table>
+                </div>
+             </div>
+             <!--/ Transaction History End -->
+          </div>
+       </div>
+       <div class="row clearfix">
+          <div class="col-md-4 col-lg-12 col-xl-4">
+             <!--================================-->
+             <!-- Support Tickets Start -->
+             <!--================================-->
+             <div class="card mg-y-10 shadow-1">
+                <div class="card-header">
+                   <h4 class="card-header-title">
+                      Support Tickets
+                   </h4>
+                   <div class="card-header-btn">
+                      <a  href="javascript:void(0)" data-toggle="collapse" class="btn btn-info" data-target="#collapse4" aria-expanded="true"><i class="ion-ios-arrow-down"></i></a>
+                      <a href="javascript:void(0)" data-toggle="refresh" class="btn btn-warning"><i class="ion-android-refresh"></i></a>
+                      <a href="javascript:void(0)" data-toggle="expand" class="btn btn-success"><i class="ion-android-expand"></i></a>
+                      <a href="javascript:void(0)" data-toggle="remove" class="btn btn-danger"><i class="ion-ios-trash-outline"></i></a>
+                   </div>
+                </div>
+                <div class="card-body collapse show" id="collapse4">
+                   <div class="pb-1 mb-2">
+                      <div class="badge-warning float-right">Feature</div>
+                      <a href="javascript:void(0)">Lorem ipsum dolor sit amet, vis erat denique in.</a>
+                      <p class="text-muted mg-b-0">Support ID: #85645563</p>
+                      <small class="text-muted">Created by: <a href="javascript:void(0)" class="text-dark">Peter Johnson</a> 1 day ago</small>
+                   </div>
+                   <div class="pb-1 mb-2">
+                      <div class="badge-danger float-right">Bug</div>
+                      <a href="javascript:void(0)">Lorem ipsum dolor sit amet, vis erat denique in.</a>
+                      <p class="text-muted mg-b-0">Support ID: #85645563</p>
+                      <small class="text-muted">Created by: <a href="javascript:void(0)" class="text-dark">Peter Johnson</a> 2 day ago</small>
+                   </div>
+                   <div class="pb-1 mb-2">
+                      <div class="badge-info float-right">Informational</div>
+                      <a href="javascript:void(0)">Lorem ipsum dolor sit amet, vis denique in.</a>
+                      <p class="text-muted mg-b-0">Support ID: #85645563</p>
+                      <small class="text-muted">Created by: <a href="javascript:void(0)" class="text-dark">Peter Johnson</a> 4 day ago</small>
+                   </div>
+                   <div class="pb-1 mb-2">
+                      <div class="badge-warning float-right">Feature</div>
+                      <a href="javascript:void(0)">Lorem ipsum dolor sit amet, vis erat denique in.</a>
+                      <p class="text-muted mg-b-0">Support ID: #85645563</p>
+                      <small class="text-muted">Created by: <a href="javascript:void(0)" class="text-dark">Peter Johnson</a> 3 day ago</small>
+                   </div>
+                   <div class="pb-1">
+                      <div class="badge-success float-right">Enhancement</div>
+                      <a href="javascript:void(0)">Lorem ipsum dolor sit amet, erat denique in.</a>
+                      <p class="text-muted mg-b-0">Support ID: #85645563</p>
+                      <small class="text-muted">Created by: <a href="javascript:void(0)" class="text-dark">Peter Johnson</a> 5 day ago</small>
+                   </div>
+                </div>
+             </div>
+             <!--/ Support Tickets End -->
+          </div>
+          <!--================================-->
+          <!-- Recent Activity Start -->
+          <!--================================-->
+          <div class="col-md-4 col-lg-12 col-xl-4">
+             <div class="card card-activities mg-y-10 shadow-1">
+                <div class="card-header">
+                   <h4 class="card-header-title">
+                      Recent Activities
+                   </h4>
+                   <div class="card-header-btn">
+                      <a  href="javascript:void(0)" data-toggle="collapse" class="btn btn-info" data-target="#collapse5" aria-expanded="true"><i class="ion-ios-arrow-down"></i></a>
+                      <a href="javascript:void(0)" data-toggle="refresh" class="btn btn-warning"><i class="ion-android-refresh"></i></a>
+                      <a href="javascript:void(0)" data-toggle="expand" class="btn btn-success"><i class="ion-android-expand"></i></a>
+                      <a href="javascript:void(0)" data-toggle="remove" class="btn btn-danger"><i class="ion-ios-trash-outline"></i></a>
+                   </div>
+                </div>
+                <div class="card-body collapse show" id="collapse5">
+                   <div class="media-list">
+                      <div class="media">
+                         <div class="activity-icon bg-primary">
+                            <i class="icon ion-stats-bars"></i>
+                         </div>
+                         <div class="media-body">
+                            <h6>Report has been updated</h6>
+                            <p>Aenean vulputate eleifend tellus. A nean leo ligula, porttitor.</p>
+                            <span>2 hours ago</span>
+                         </div>
+                      </div>
+                      <div class="media">
+                         <div class="activity-icon bg-success">
+                            <i class="icon ion-trophy"></i>
+                         </div>
+                         <div class="media-body">
+                            <h6>Achievement Unlocked</h6>
+                            <p>Aenean vulputate eleifend tellus. A nean leo ligula, porttitor.</p>
+                            <span>2 hours ago</span>
+                         </div>
+                      </div>
+                      <div class="media">
+                         <div class="activity-icon bg-purple">
+                            <i class="icon ion-image"></i>
+                         </div>
+                         <div class="media-body">
+                            <h6>Added new images</h6>
+                            <p>Aenean vulputate eleifend tellus. A nean leo ligula, porttitor.</p>
+                            <span>2 hours ago</span>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <!--/ Recent Activity End -->
+          <!--================================-->
+          <!-- Friends  List Start -->
+          <!--================================-->
+          <div class="col-md-4 col-lg-12 col-xl-4">
+             <div class="card mg-y-10 shadow-1">
+                <div class="card-header">
+                   <h4 class="card-header-title">
+                      People You May Know
+                   </h4>
+                   <div class="card-header-btn">
+                      <a  href="javascript:void(0)" data-toggle="collapse" class="btn btn-info" data-target="#collapse6" aria-expanded="true"><i class="ion-ios-arrow-down"></i></a>
+                      <a href="javascript:void(0)" data-toggle="refresh" class="btn btn-warning"><i class="ion-android-refresh"></i></a>
+                      <a href="javascript:void(0)" data-toggle="expand" class="btn btn-success"><i class="ion-android-expand"></i></a>
+                      <a href="javascript:void(0)" data-toggle="remove" class="btn btn-danger"><i class="ion-ios-trash-outline"></i></a>
+                   </div>
+                </div>
+                <div class="card-body collapse show" id="collapse6">
+                   <div class="card-people-list">
+                      <div class="media">
+                         <img src="assets/images/avatar/avatar.png" alt="">
+                         <div class="media-body">
+                            <a href="javascript:void(0)">Amber Heard</a>
+                            <p class="tx-13">Software Engineer</p>
+                         </div>
+                         <a href="javascript:void(0)"><i class="icon ion-person-add tx-20"></i></a>
+                      </div>
+                      <div class="media">
+                         <img src="assets/images/avatar/avatar2.png" alt="">
+                         <div class="media-body">
+                            <a href="javascript:void(0)">Richard Salomon</a>
+                            <p class="tx-13">Architect</p>
+                         </div>
+                         <a href="javascript:void(0)"><i class="icon ion-person-add tx-20"></i></a>
+                      </div>
+                      <div class="media">
+                         <img src="assets/images/avatar/avatar3.png" alt="">
+                         <div class="media-body">
+                            <a href="javascript:void(0)">Warren Vito</a>
+                            <p class="tx-13">Sales Representative</p>
+                         </div>
+                         <a href="javascript:void(0)"><i class="icon ion-person-add tx-20"></i></a>
+                      </div>
+                      <div class="media">
+                         <img src="assets/images/avatar/avatar4.png" alt="">
+                         <div class="media-body">
+                            <a href="javascript:void(0)">Warren Vito</a>
+                            <p class="tx-13">Sales Representative</p>
+                         </div>
+                         <a href="javascript:void(0)"><i class="icon ion-person-add tx-20"></i></a>
+                      </div>
+                      <div class="media">
+                         <img src="assets/images/avatar/avatar5.png" alt="">
+                         <div class="media-body">
+                            <a href="javascript:void(0)">Charlene Plateros</a>
+                            <p class="tx-13">Sales Representative</p>
+                         </div>
+                         <a href="javascript:void(0)"><i class="icon ion-person-add tx-20"></i></a>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <!--/ Friends  List End -->
+       </div>
+       <!--================================-->
+       <!-- Social Activity 2 Start -->
+       <!--================================-->
+       <div class="row clearfix">
+          <div class="col-md-4">
+             <div class="card mb-4 text-white bg-twitter shadow-1">
+                <div class="card-body">
+                   <i class="fa fa-twitter tx-30 mb-3"></i>
+                   <h6 class="card-title text-light tx-13">Some quick example text to build on the card title and make up the bulk of the card's content.</h6>
+                   <span class="float-left tx-11">11 January, 2018</span>
+                   <div class=" float-right">
+                      <span class="mr-3 tx-11"> <i class="fa fa-heart"></i> 234</span>
+                      <span class="tx-11"> <i class="fa fa-thumbs-up "></i> 456</span>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-4">
+             <div class="card mb-4 text-white bg-facebook shadow-1">
+                <div class="card-body">
+                   <i class="fa fa-facebook tx-30 mb-3"></i>
+                   <h6 class="card-title text-light tx-13">Some quick example text to build on the card title and make up the bulk of the card's content.</h6>
+                   <span class="float-left tx-11">11 January, 2018</span>
+                   <div class=" float-right">
+                      <span class="mr-3 tx-11"> <i class="fa fa-heart"></i> 234</span>
+                      <span class="tx-11"> <i class="fa fa-thumbs-up "></i> 456</span>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-4">
+             <div class="card mb-4 text-white bg-google-plus shadow-1">
+                <div class="card-body">
+                   <i class="fa fa-google-plus tx-30 mb-3"></i>
+                   <h6 class="card-title text-light tx-13">Some quick example text to build on the card title and make up the bulk of the card's content.</h6>
+                   <span class="float-left tx-11">11 January, 2018</span>
+                   <div class=" float-right">
+                      <span class="mr-3 tx-11"><i class="fa fa-heart"></i> 234</span>
+                      <span class="tx-11"><i class="fa fa-thumbs-up"></i> 456</span>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <!--/ Social Activity 2 End -->
+    </div>
+    <!--/ Main Wrapper End -->
+ </div>
+  <!--/ Page Inner End -->
+        <!--================================-->
+
+ {% endblock %}

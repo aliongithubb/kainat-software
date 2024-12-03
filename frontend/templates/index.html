@@ -1,0 +1,427 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<!-- Hero Start -->
+<div class="container-fluid bg-primary py-5 mb-5 hero-header">
+    <div class="container py-5">
+        <div class="row justify-content-start">
+            <div class="col-lg-8 text-center text-lg-start">
+                <h1 class="font-secondary text-primary mb-4">Welcome to</h1>
+                <img src="{% static 'images/favicon.ico' %}" alt="">
+                <h1 class="text-uppercase text-dark">Plastic Industry</h1>
+                <h3 class="font-secondary text-dark ">Innovations in the Sanitary Industry</h3>
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                    <a href="" class="btn btn-primary border-inner py-3 px-5 me-5">View Products</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
+
+<!-- Products Start -->
+<div class="container-fluid about py-5">
+    <div class="container">
+        <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+            <h2 class="text-primary font-secondary">Explore Our</h2>
+            <h1 class="display-4 text-uppercase">Collections</h1>
+        </div>
+        <div class="tab-class text-center">
+            <ul class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase border-inner p-4 mb-5">
+                <li class="nav-item">
+                    <a class="nav-link text-white active" data-bs-toggle="pill" href="#tab-1">All</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-2">ABS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-3">PP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-4">Bronze</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab-1" class=" tab-pane fade active show p-0 container-fluid py-5">
+                    <div class="container">
+                        <div class="row g-5">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="team-item">
+                                    <div class="position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="{% static 'images/team-1.jpg' %}" alt="">
+                                        <div
+                                            class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#">
+                                                    <i class="fab bi bi-eye fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab bi bi-cart3 fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab bi bi-heart fw-normal"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-dark border-inner text-center p-4">
+                                        <h4 class="text-uppercase text-primary">WALL SHOWER</h4>
+                                        <p class="text-white text-start m-0">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Id aperiam eaque deserunt illo accusamus soluta ipsam
+                                            neque omnis! Maxime accusamus impedit a aut dolor nostrum dolorem porro rem
+                                            corrupti totam?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="team-item">
+                                    <div class="position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="{% static 'images/team-2.jpg' %}" alt="">
+                                        <div
+                                            class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-dark border-inner text-center p-4">
+                                        <h4 class="text-uppercase text-primary">Full Name</h4>
+                                        <p class="text-white m-0">Designation</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="team-item">
+                                    <div class="position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="{% static 'images/team-3.jpg' %}" alt="">
+                                        <div
+                                            class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-dark border-inner text-center p-4">
+                                        <h4 class="text-uppercase text-primary">Full Name</h4>
+                                        <p class="text-white m-0">Designation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-2" class=" tab-pane fade show p-0 container-fluid py-5">
+                    <div class="container">
+                        <div class="row g-5">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="team-item">
+                                    <div class="position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="{% static 'images/team-1.jpg' %}" alt="">
+                                        <div
+                                            class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#">
+                                                    <i class="fab bi bi-eye fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab bi bi-cart3 fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab bi bi-heart fw-normal"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-dark border-inner text-center p-4">
+                                        <h4 class="text-uppercase text-primary">WALL SHOWER</h4>
+                                        <p class="text-white text-start m-0">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Id aperiam eaque deserunt illo accusamus soluta ipsam
+                                            neque omnis! Maxime accusamus impedit a aut dolor nostrum dolorem porro rem
+                                            corrupti totam?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="team-item">
+                                    <div class="position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="{% static 'images/team-2.jpg' %}" alt="">
+                                        <div
+                                            class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-dark border-inner text-center p-4">
+                                        <h4 class="text-uppercase text-primary">Full Name</h4>
+                                        <p class="text-white m-0">Designation</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="team-item">
+                                    <div class="position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="{% static 'images/team-3.jpg' %}" alt="">
+                                        <div
+                                            class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-dark border-inner text-center p-4">
+                                        <h4 class="text-uppercase text-primary">Full Name</h4>
+                                        <p class="text-white m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quod, voluptatum aliquam nesciunt eaque nam iure, suscipit culpa est placeat quidem. Nostrum aliquam corporis distinctio voluptatum nihil deleniti? Vitae, maxime.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-3" class=" tab-pane fade show p-0 container-fluid py-5">
+                    <div class="container">
+                        <div class="row g-5">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="team-item">
+                                    <div class="position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="{% static 'images/team-1.jpg' %}" alt="">
+                                        <div
+                                            class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#">
+                                                    <i class="fab bi bi-eye fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab bi bi-cart3 fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab bi bi-heart fw-normal"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-dark border-inner text-center p-4">
+                                        <h4 class="text-uppercase text-primary">WALL SHOWER</h4>
+                                        <p class="text-white text-start m-0">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Id aperiam eaque deserunt illo accusamus soluta ipsam
+                                            neque omnis! Maxime accusamus impedit a aut dolor nostrum dolorem porro rem
+                                            corrupti totam?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="team-item">
+                                    <div class="position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="{% static 'images/team-2.jpg' %}" alt="">
+                                        <div
+                                            class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-dark border-inner text-center p-4">
+                                        <h4 class="text-uppercase text-primary">Full Name</h4>
+                                        <p class="text-white m-0">Designation</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="team-item">
+                                    <div class="position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="{% static 'images/team-3.jpg' %}" alt="">
+                                        <div
+                                            class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-dark border-inner text-center p-4">
+                                        <h4 class="text-uppercase text-primary">Full Name</h4>
+                                        <p class="text-white m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nostrum itaque modi quia laudantium quasi beatae impedit possimus ut, illum labore mollitia ipsam voluptatem facere. Aperiam nam natus quae consectetur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-4" class=" tab-pane fade show p-0 container-fluid py-5">
+                    <div class="container">
+                        <div class="row g-5">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="team-item">
+                                    <div class="position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="{% static 'images/team-1.jpg' %}" alt="">
+                                        <div
+                                            class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#">
+                                                    <i class="fab bi bi-eye fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab bi bi-cart3 fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab bi bi-heart fw-normal"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-dark border-inner text-center p-4">
+                                        <h4 class="text-uppercase text-primary">WALL SHOWER</h4>
+                                        <p class="text-white text-start m-0">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Id aperiam eaque deserunt illo accusamus soluta ipsam
+                                            neque omnis! Maxime accusamus impedit a aut dolor nostrum dolorem porro rem
+                                            corrupti totam?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="team-item">
+                                    <div class="position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="{% static 'images/team-2.jpg' %}" alt="">
+                                        <div
+                                            class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-dark border-inner text-center p-4">
+                                        <h4 class="text-uppercase text-primary">Full Name</h4>
+                                        <p class="text-white m-0">Designation</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="team-item">
+                                    <div class="position-relative overflow-hidden">
+                                        <img class="img-fluid w-100" src="{% static 'images/team-3.jpg' %}" alt="">
+                                        <div
+                                            class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
+                                                    href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-dark border-inner text-center p-4">
+                                        <h4 class="text-uppercase text-primary">Full Name</h4>
+                                        <p class="text-white m-0">Designation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Products End -->
+
+<!-- Testimonial Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+            <h2 class="text-primary font-secondary">Testimonial</h2>
+            <h1 class="display-4 text-uppercase">Our Clients Say!!!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel">
+            <div class="testimonial-item bg-dark text-white border-inner p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <img class="img-fluid flex-shrink-0" src="{% static 'images/testimonial-1.jpg' %}"
+                        style="width: 60px; height: 60px;">
+                    <div class="ps-3">
+                        <h4 class="text-primary text-uppercase mb-1">Client Name</h4>
+                        <span>Profession</span>
+                    </div>
+                </div>
+                <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos
+                    labore diam
+                </p>
+            </div>
+            <div class="testimonial-item bg-dark text-white border-inner p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <img class="img-fluid flex-shrink-0" src="{% static 'images/testimonial-2.jpg' %}"
+                        style="width: 60px; height: 60px;">
+                    <div class="ps-3">
+                        <h4 class="text-primary text-uppercase mb-1">Client Name</h4>
+                        <span>Profession</span>
+                    </div>
+                </div>
+                <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos
+                    labore diam
+                </p>
+            </div>
+            <div class="testimonial-item bg-dark text-white border-inner p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <img class="img-fluid flex-shrink-0" src="{% static 'images/testimonial-3.jpg' %}"
+                        style="width: 60px; height: 60px;">
+                    <div class="ps-3">
+                        <h4 class="text-primary text-uppercase mb-1">Client Name</h4>
+                        <span>Profession</span>
+                    </div>
+                </div>
+                <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos
+                    labore diam
+                </p>
+            </div>
+            <div class="testimonial-item bg-dark text-white border-inner p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <img class="img-fluid flex-shrink-0" src="{% static 'images/testimonial-4.jpg' %}"
+                        style="width: 60px; height: 60px;">
+                    <div class="ps-3">
+                        <h4 class="text-primary text-uppercase mb-1">Client Name</h4>
+                        <span>Profession</span>
+                    </div>
+                </div>
+                <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos
+                    labore diam
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+
+
+
+{% endblock %}

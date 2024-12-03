@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<!-- Page Header Start -->
+<div class="container-fluid bg-dark bg-img p-5 mb-5">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1 class="display-4 text-uppercase text-white">Registraion</h1>
+            <a href="/">Home</a>
+            <i class="far fa-square text-primary px-2"></i>
+            <a href="#">Registraion</a>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+
+<!-- Sign up Start -->
+<div class="container-fluid login position-relative " style="margin-top: 90px;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <form action="/registration/" method="post">
+                    {% csrf_token %}
+                    <div class="row g-3">
+                        <div class="col-sm-12">
+                            {% if error %}
+                            <div id="error" class="alert alert-danger">{{error}}</div>
+                            {% endif %}
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    
+                                    <input type="text" name="first_name" class="form-control bg-light border-0 px-4"
+                                        placeholder="First Name" required style="height: 55px;">
+                                    <div id="firstNameError" class="text-danger">{{first_name_error}}</div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" name="last_name" required
+                                        class="form-control bg-light border-0 px-4" placeholder="Last Name"
+                                        style="height: 55px;">
+                                    <div id="LastNameError" class="text-danger">{{last_name_error}}</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-12 phone_div">
+                            <input type="number" id="phone_number" name="phone_number" required
+                                class="form-control bg-light border-0 px-4"
+                                placeholder="Whatsapp Phone Number (00923*********)" style="height: 55px;">
+                            <div id="phoneNumberError" class="text-danger">{{phone_number_error}}</div>
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="email" name="email" required class="form-control bg-light border-0 px-4"
+                                placeholder="Email" style="height: 55px;">
+                            <div id="emailError" class="text-danger">{{email_error}}</div>
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="password" name="password" required class="form-control bg-light border-0 px-4"
+                                placeholder="Password" style="height: 55px;">
+                            <div id="passwordError" class="text-danger">{{password_error}}</div>
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="password" name="confirm_password" required
+                                class="form-control bg-light border-0 px-4" placeholder="Confirm Password"
+                                style="height: 55px;">
+                            <div id="confirmPasswordError" class="text-danger">{{confirm_password_error}}</div>
+                        </div>
+                        <div class="col-sm-12">
+                            <button class="btn btn-primary text-uppercase border-inner w-100 py-3"
+                                type="submit">Create</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div style="display: flex; align-items: center; margin-top:50px; margin-bottom: 50px;">
+                    <span style="flex: 1; border-top: 1px solid var(--primary);"></span>
+                    <div style="padding: 0 10px; color:var(--primary); font-size: 16px;">OR SIGN WITH</div>
+                    <span style="flex: 1; border-top: 1px solid var(--primary);"></span>
+                </div>
+
+                <div class="social"> 
+                    <a href="{% url 'social:begin' 'facebook' %}" id="facebook-btn" class="btn btn-primary"><i class="bi bi-facebook"></i></a>
+                    <a href="{% url 'social:begin' 'google-oauth2' %}" id="google-btn" class="btn btn-primary"><i class="bi bi-google"></i></a>
+                    <a href=""><i class="bi bi-twitter-x btn btn-primary"></i></a>
+
+                </div>
+                  
+                  <div>
+
+                  </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+<!-- Contact End -->
+
+
+{% endblock %}
